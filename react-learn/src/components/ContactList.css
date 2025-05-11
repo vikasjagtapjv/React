@@ -1,0 +1,24 @@
+.contact-list {
+  table {
+    tbody {
+      .contact-details {
+        td {
+          .contact-Name {
+            gap: 10px;
+            display: flex;
+            align-items: center;
+            img {
+              width: 30px;
+              height: 30px;
+              border-radius: 100%;
+            }
+            span {
+              font-size: 16px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}

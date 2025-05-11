@@ -1,0 +1,167 @@
+import moment from "moment";
+
+export interface IcontactDetails {
+  contactId: string;
+  contactName: string;
+  image: string;
+  position: string;
+  officeAddress: string;
+  age: string;
+  startDate: Date;
+  salary: string;
+}
+export const contactList: IcontactDetails[] = [
+  {
+    contactId: "C001",
+    contactName: "Alice Johnson",
+    image: "https://randomuser.me/api/portraits/women/1.jpg",
+    position: "Software Engineer",
+    officeAddress: "123 Main St, New York, NY",
+    age: "29",
+    startDate: new Date("2020-01-15"),
+    salary: "$85,000",
+  },
+  {
+    contactId: "C002",
+    contactName: "Bob Smith",
+    image: "https://randomuser.me/api/portraits/men/2.jpg",
+    position: "Project Manager",
+    officeAddress: "456 Elm St, Los Angeles, CA",
+    age: "35",
+    startDate: new Date("2019-07-22"),
+    salary: "$95,000",
+  },
+  {
+    contactId: "C003",
+    contactName: "Clara Davis",
+    image: "https://randomuser.me/api/portraits/women/3.jpg",
+    position: "UI/UX Designer",
+    officeAddress: "789 Oak St, Chicago, IL",
+    age: "27",
+    startDate: new Date("2021-03-10"),
+    salary: "$78,000",
+  },
+  {
+    contactId: "C004",
+    contactName: "David Brown",
+    image: "https://randomuser.me/api/portraits/men/4.jpg",
+    position: "Data Analyst",
+    officeAddress: "101 Pine St, San Francisco, CA",
+    age: "32",
+    startDate: new Date("2018-11-05"),
+    salary: "$88,000",
+  },
+  {
+    contactId: "C005",
+    contactName: "Ella Wilson",
+    image: "https://randomuser.me/api/portraits/women/5.jpg",
+    position: "HR Manager",
+    officeAddress: "202 Maple Ave, Seattle, WA",
+    age: "40",
+    startDate: new Date("2016-09-01"),
+    salary: "$92,000",
+  },
+  {
+    contactId: "C006",
+    contactName: "Frank Green",
+    image: "https://randomuser.me/api/portraits/men/6.jpg",
+    position: "Marketing Lead",
+    officeAddress: "303 Cedar Rd, Austin, TX",
+    age: "38",
+    startDate: new Date("2017-05-15"),
+    salary: "$89,000",
+  },
+  {
+    contactId: "C007",
+    contactName: "Grace Lee",
+    image: "https://randomuser.me/api/portraits/women/7.jpg",
+    position: "QA Engineer",
+    officeAddress: "404 Birch Ln, Denver, CO",
+    age: "31",
+    startDate: new Date("2022-01-10"),
+    salary: "$76,000",
+  },
+  {
+    contactId: "C008",
+    contactName: "Henry Clark",
+    image: "https://randomuser.me/api/portraits/men/8.jpg",
+    position: "DevOps Engineer",
+    officeAddress: "505 Walnut St, Miami, FL",
+    age: "30",
+    startDate: new Date("2019-06-20"),
+    salary: "$90,000",
+  },
+  {
+    contactId: "C009",
+    contactName: "Isla Lewis",
+    image: "https://randomuser.me/api/portraits/women/9.jpg",
+    position: "Product Owner",
+    officeAddress: "606 Willow Dr, Boston, MA",
+    age: "34",
+    startDate: new Date("2018-04-25"),
+    salary: "$100,000",
+  },
+  {
+    contactId: "C010",
+    contactName: "Jack Miller",
+    image: "https://randomuser.me/api/portraits/men/10.jpg",
+    position: "Backend Developer",
+    officeAddress: "707 Chestnut Ave, Atlanta, GA",
+    age: "28",
+    startDate: new Date("2021-10-12"),
+    salary: "$82,000",
+  },
+  {
+    contactId: "C011",
+    contactName: "Katie Evans",
+    image: "https://randomuser.me/api/portraits/women/11.jpg",
+    position: "Technical Writer",
+    officeAddress: "808 Fir St, Dallas, TX",
+    age: "33",
+    startDate: new Date("2020-02-03"),
+    salary: "$74,000",
+  },
+  {
+    contactId: "C012",
+    contactName: "Leo Martin",
+    image: "https://randomuser.me/api/portraits/men/12.jpg",
+    position: "System Admin",
+    officeAddress: "909 Cypress Rd, Portland, OR",
+    age: "36",
+    startDate: new Date("2017-12-18"),
+    salary: "$87,000",
+  },
+  {
+    contactId: "C013",
+    contactName: "Mia Thompson",
+    image: "https://randomuser.me/api/portraits/women/13.jpg",
+    position: "Frontend Developer",
+    officeAddress: "123 Redwood Blvd, Houston, TX",
+    age: "26",
+    startDate: new Date("2022-07-30"),
+    salary: "$80,000",
+  },
+  {
+    contactId: "C014",
+    contactName: "Nathan Scott",
+    image: "https://randomuser.me/api/portraits/men/14.jpg",
+    position: "Cloud Engineer",
+    officeAddress: "234 Palm Way, Orlando, FL",
+    age: "29",
+    startDate: new Date("2021-09-14"),
+    salary: "$91,000",
+  },
+  {
+    contactId: "C015",
+    contactName: "Olivia Hall",
+    image: "https://randomuser.me/api/portraits/women/15.jpg",
+    position: "Business Analyst",
+    officeAddress: "345 Spruce Ct, Phoenix, AZ",
+    age: "37",
+    startDate: new Date("2016-08-08"),
+    salary: "$86,000",
+  },
+];
+export const getDateInFormat = (date: Date, format: string) => {
+  return moment(date).format(format);
+};
